@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title></title>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+            <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
+            <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+
+            <style>
+                  h2 {
+                        color: blue;
+                  }
+            </style>
+      </head>
+      <body>
+            <div class="container p-3">
+                  <div class="card p-3 bg-warning-subtle">
+                        <h2>Nilai Random, Index Genap dan Index Ganjil</h2>
+                        <table id="myTable" class="display">
+                              <thead>
+                                    <tr>
+                                          <th>Nilai Random</th>
+                                          <th>Nilai Genap</th>
+                                          <th>Nilai Ganjil</th>
+                                    </tr>
+                              </thead>
+                              <tbody>
+                                    <tr>
+                                          <td id="nilairandom"></td>
+                                          <td id="nilaigenap"></td>
+                                          <td id="nilaiganjil"></td>
+                                    </tr>
+                              </tbody>
+                        </table>
+
+                        <h2>Min, Max, Total dan Rata-rata Nilai Genap</h2>
+                        <table id="myTable1" class="display">
+                              <thead>
+                                    <tr>
+                                          <th>Minimal Nilai Genap</th>
+                                          <th>Maximal Nilai Genap</th>
+                                          <th>Total Nilai Genap</th>
+                                          <th>Rata-rata Nilai Genap</th>
+                                    </tr>
+                              </thead>
+                              <tbody>
+                                    <tr>
+                                          <td id="minnilaigenap"></td>
+                                          <td id="maxnilaigenap"></td>
+                                          <td id="totalnilaigenap"></td>
+                                          <td id="rataratanilaigenap"></td>
+                                    </tr>
+                              </tbody>
+                        </table>
+
+                        <h2>Min, Max, Total dan Rata-rata Nilai Ganjil</h2>
+                        <table id="myTable2" class="display">
+                              <thead>
+                                    <tr>
+                                          <th>Minimal Nilai Ganjil</th>
+                                          <th>Maximal Nilai Ganjil</th>
+                                          <th>Total Nilai Ganjil</th>
+                                          <th>Rata-rata Nilai Ganjil</th>
+                                    </tr>
+                              </thead>
+                              <tbody>
+                                    <tr>
+                                          <td id="minnilaiganjil"></td>
+                                          <td id="maxnilaiganjil"></td>
+                                          <td id="totalnilaiganjil"></td>
+                                          <td id="rataratanilaiganjil"></td>
+                                    </tr>
+                              </tbody>
+                        </table>
+
+                        <h2>Perbandingan Nilai Genap dan Ganjil</h2>
+                        <table id="myTable3" class="display">
+                              <thead>
+                                    <tr>
+                                          <th>Min perbandingan</th>
+                                          <th>Max perbandingan</th>
+                                          <th>Total perbandingan</th>
+                                          <th>Rata-rata perbandingan</th>
+                                    </tr>
+                              </thead>
+                              <tbody>
+                                    <tr>
+                                          <td id="minComparison"></td>
+                                          <td id="maxComparison"></td>
+                                          <td id="totalComparison"></td>
+                                          <td id="ratarataComparison"></td>
+                                    </tr>
+                              </tbody>
+                        </table>
+                  </div>
+            </div>
+
+            <script type="text/javascript">
+                  $(document).ready(function () {
+                        $("#myTable").DataTable();
+                  });
+                  $(document).ready(function () {
+                        $("#myTable1").DataTable();
+                  });
+                  $(document).ready(function () {
+                        $("#myTable2").DataTable();
+                  });
+                  $(document).ready(function () {
+                        $("#myTable3").DataTable();
+                  });
+            </script>
+            <script src="HomeWork_Week4.js"></script>
+      </body>
+</html>
