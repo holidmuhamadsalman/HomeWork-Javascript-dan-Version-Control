@@ -13,7 +13,7 @@ randomValuesElement.textContent = randomValuesAsString;
 const genap = [];
 const ganjil = [];
 for (let i = 0; i < randomValues.length; i++) {
-      if (randomValues[i] % 2 === 0) {
+      if (i % 2 === 0) {
             genap.push(randomValues[i]);
       } else {
             ganjil.push(randomValues[i]);
@@ -97,7 +97,7 @@ if (maxgenap > maxganjil) {
 } else if (maxgenap < maxganjil) {
       document.getElementById("maxComparison").innerText = "Max lebih besar pada array ganjil";
 } else {
-      document.getElementById("minComparison").innerText = "Max memiliki nilai yang sama pada kedua array";
+      document.getElementById("maxComparison").innerText = "Max memiliki nilai yang sama pada kedua array";
 }
 
 if (totalgenap === totalganjil) {
